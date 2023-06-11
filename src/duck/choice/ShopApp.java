@@ -9,6 +9,7 @@ public class ShopApp {
 
         Customer customer1 = new Customer();
         customer1.name = "Pink";
+        customer1.size = "S";
 
         System.out.println("Welcome to the Duck Shop " + customer1.name + "!");
 
@@ -28,5 +29,14 @@ public class ShopApp {
 
         total = (2 * item2.price + item1.price) * (1 + tax);
         System.out.println("Total: " + total);
+
+        int measurement = 3;
+
+        switch (measurement) {
+            case 1,2,3 -> customer1.size = "S";
+            case 4, 5, 6 -> customer1.size = "M";
+            case 7, 8, 9 -> customer1.size = "L";
+            default -> customer1.size = "X";
+        }
     }
 }
