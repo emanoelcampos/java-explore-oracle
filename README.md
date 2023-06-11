@@ -6,3 +6,5 @@ Objetivos principais:
 - Melhorar meu conhecimento em Java
 - Aprimorar minha proficiência em inglês
 - Documentar apenas as atividades no final de cada módulo desenvolvido em um único programa.
+
+<div align="center" ><img src="https://github.com/emanoelcampos/java-explorer-oracle/assets/68448029/a22b1be7-e81f-4eaa-a17f-f50fea72bad5" width="400"></div>
