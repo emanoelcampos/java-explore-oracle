@@ -2,7 +2,32 @@ package duck.choice;
 
 public class Customer {
 
-    String name;
-    String size;
+    private String name;
+    private String size;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public void setSize(int measurement) {
+        switch (measurement) {
+            case 1,2,3 -> setSize("S");
+            case 4, 5, 6 -> setSize("M");
+            case 7, 8, 9 -> setSize("L");
+            default -> setSize("XL");
+        }
+    }
 
 }
