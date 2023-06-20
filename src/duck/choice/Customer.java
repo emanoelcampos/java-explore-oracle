@@ -4,6 +4,7 @@ public class Customer {
 
     private String name;
     private String size;
+    private Clothing[] items;
 
     public String getName() {
         return name;
@@ -30,4 +31,19 @@ public class Customer {
         }
     }
 
+    public void addItems(Clothing[] items) {
+        this.items = items;
+    }
+
+    public Clothing[] getItems() {
+        return items;
+    }
+
+    public double getTotalClothingCost() {
+        double total = 0.0;
+        for(Clothing item : items) {
+                total += item.getPrice();
+        }
+        return total;
+    }
 }
